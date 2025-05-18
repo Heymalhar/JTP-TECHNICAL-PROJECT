@@ -5,7 +5,7 @@ from recommender.engine import(
     recommend_tracks,
     store_recommendations
 )
-from recommender.db import tracks_col
+from database.db import tracks_col
 
 routes = Blueprint("routes", __name__)
 
