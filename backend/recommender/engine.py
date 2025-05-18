@@ -2,7 +2,12 @@ import numpy as np
 import random
 from sklearn.metrics.pairwise import cosine_similarity
 
-from .db import tracks_col, users_col
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+from database.db import tracks_col, users_col
 
 NOISE_STD = 0.015
 TOP_N = 100
